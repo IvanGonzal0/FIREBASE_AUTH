@@ -1,3 +1,4 @@
 import './app/firebase.js'
+import './app/signupForm.js'
 
-console.log('Hello World');
+console.log('Hello from main.js');
