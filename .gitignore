@@ -1,2 +1,3 @@
 'src/app/firebase.js'
 firebase.js
+.env
