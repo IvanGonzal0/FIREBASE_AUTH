@@ -3,7 +3,7 @@ import { auth } from "./firebase.js";
 
 const logout = document.querySelector('#logout');
 
-logout.addEventListener('click', async() => {
+logout.addEventListener('click', async () => {
     await signOut(auth);
-    console.log('Usuario desconectado');
+    console.log('logout');
 });
