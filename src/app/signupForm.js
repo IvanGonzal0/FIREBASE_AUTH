@@ -20,8 +20,17 @@ signupForm.addEventListener('submit', async (e) => {
     modal.hide();
   }
   catch(err){
-    console.log(err);
+    console.log(err.message);
+    console.log(err.code);
+    if(err.code === 'auth/email-already-in-use'){
+      alert('Email ya registrado');
+    }else if(error.code === 'auth/invalid-email'){
+      alert('Email no válido');
+    }else if(error.code === 'auth/weak-password'){
+      alert('Contraseña débil');
+    }else if(err.code){
+      alert('Error');
+    }
   }
-
 
 });
