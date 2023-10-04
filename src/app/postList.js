@@ -21,6 +21,6 @@ export const setupPosts = (data) => {
     postList.innerHTML = html;
   } else {
     postList.innerHTML =
-      '<h2 class="text-center"> There are no posts yet </h2>';
+      '<h2 class="text-center"> Login to see posts </h2>';
   }
 };
